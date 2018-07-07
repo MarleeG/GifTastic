@@ -1,12 +1,9 @@
-// function addingTopics() {
-    var topics = ["Beyonce", "Sza", "Rihanna", "Jhene Aiko"];
-    
-
-// }
-
 $(document).ready(function(){
+var topics = ["Beyonce", "Sza", "Rihanna", "Jhene Aiko"];
+
     for (var j = 0; j < topics.length; j++) {
         $(".giph__buttons").append(addingButtons(topics[j]));
+
     }
 });
 
