@@ -1,5 +1,5 @@
-$(document).ready(function(){
-var topics = ["Beyonce", "Sza", "Rihanna", "Jhene Aiko"];
+$(document).ready(function () {
+    var topics = ["Beyonce", "Sza", "Rihanna", "Jhene Aiko"];
 
     for (var j = 0; j < topics.length; j++) {
         $(".giph__buttons").append(addingButtons(topics[j]));
@@ -18,7 +18,6 @@ function addingButtons(text) {
 // Creating images, DOM manipulation
 function createImage(url, still, animated) {
 
-    // var data = response.data;
     var image = $("<img>");
 
     image.attr({
@@ -33,7 +32,6 @@ function createImage(url, still, animated) {
 
 // Displaying Giphs on the screen
 function displayGiph(response) {
-
     $(".giph__images").empty();
     var data = response.data;
 
@@ -46,11 +44,8 @@ function displayGiph(response) {
         var rating = para.text("Rating: " + data[i].rating);
         $(".giph__images").prepend(rating);
         $(".giph__images").prepend(createImage(url, still, animated));
-
     }
-
-
-};
+}
 
 
 // Getting Giphy from API 

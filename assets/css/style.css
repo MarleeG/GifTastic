@@ -36,3 +36,7 @@ p{
     margin-left: 10px;
     font-family: 'Amaranth', sans-serif;
 }
+
+.giph__images{
+    float:left;
+}
