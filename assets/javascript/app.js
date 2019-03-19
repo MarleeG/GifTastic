@@ -102,10 +102,3 @@ function playGiph() {
 }
 
 $(document).on("click", "img", playGiph);
-
-// giphy api: 0GwHAufCFymt3sl1Gj0usKecCI8vRZfW
-// Host: api.giphy.com
-// Path: /v1/gifs/search
-// api_key
-// Host, Path, ?, api_key=, then actual api key, &
-// https://api.giphy.com/v1/gifs/search?api_key=0GwHAufCFymt3sl1Gj0usKecCI8vRZfW&=animals
